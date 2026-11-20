@@ -1,0 +1,60 @@
+{
+  "name": "@yuhe520521/reme",
+  "version": "0.1.1",
+  "description": "AGH plugin for ReMe file-native long-term memory search and management",
+  "type": "module",
+  "license": "Apache-2.0",
+  "exports": "./index.mjs",
+  "files": [
+    "index.mjs",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=24.10"
+  },
+  "agnes": {
+    "plugins": [
+      {
+        "export": "aghReme",
+        "apiRange": "^5.0.0",
+        "id": "ext:reme/main",
+        "inject": [
+          "tools"
+        ],
+        "capabilities": {
+          "network": [
+            "localhost"
+          ]
+        },
+        "metadata": {
+          "displayName": "AGH ReMe Memory",
+          "summary": "Search and manage ReMe long-term memory",
+          "description": "Connects to a ReMe HTTP service to search long-term memory, capture conversation turns, and run memory consolidation. Auto-capture and scheduled dream are degraded to explicit tool calls in AGH.",
+          "locales": {
+            "zh-CN": {
+              "displayName": "AGH ReMe 记忆",
+              "summary": "搜索和管理 ReMe 长期记忆",
+              "description": "连接 ReMe HTTP 服务以搜索长期记忆、捕获对话轮次并运行记忆整理。自动捕获和定时梦境在 AGH 中降级为显式工具调用。"
+            }
+          }
+        }
+      }
+    ],
+    "metadata": {
+      "displayName": "AGH ReMe Memory",
+      "summary": "Search and manage ReMe long-term memory",
+      "description": "Connects to a ReMe HTTP service to search long-term memory, capture conversation turns, and run memory consolidation.",
+      "locales": {
+        "zh-CN": {
+          "displayName": "AGH ReMe 记忆",
+          "summary": "搜索和管理 ReMe 长期记忆",
+          "description": "连接 ReMe HTTP 服务以搜索长期记忆、捕获对话轮次并运行记忆整理。"
+        }
+      }
+    },
+    "provides": [
+      "tool"
+    ]
+  },
+  "displayName": "AGH ReMe Memory"
+}

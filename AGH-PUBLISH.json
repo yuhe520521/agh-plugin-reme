@@ -1,0 +1,12 @@
+{
+  "plugin_id": "agh-reme",
+  "package": "@yuhe520521/reme",
+  "version": "0.1.1",
+  "display_name": "AGH ReMe Memory",
+  "display_name_zh": "AGH ReMe 记忆",
+  "source_version": null,
+  "repository": "https://github.com/yuhe520521/agh-plugin-reme",
+  "published_by": "AGH Hub pipeline",
+  "published_at": "2026-11-20T17:47:38.231Z",
+  "pipeline": "AGH Hub P4 → gh-publish"
+}
